@@ -98,7 +98,31 @@ public class Main {
                     break;
 
                 case 3:
-                    System.out.println("Libros que se encuentran en la lista: \n" + Chapter.getTitle());
+                    do {
+                        System.out.println("1. title \n 2. genero \n 3. duracion\n 4. serie completa\n");
+                        opcion1 =scanner.nextInt();
+                        switch (opcion1){
+                            case 1:
+                                System.out.println("El titulo del chapter es: " + Chapter.getTitle()+ "\n");
+                                break;
+                            case 2:
+                                System.out.println("La duracion del chapter es: " + Chapter.getDuration()+ "\n");
+
+                                break;
+                            case 3:
+                                System.out.println("El año del chapter es: " + Chapter.getYear()+ "\n");
+                                break;
+                            case 4:
+                                System.out.println("Chapter completo: \n" +
+                                        "El titulo del chapter es: " + Chapter.getTitle()+ "\n" +
+                                        "La duracion del chapter es: " + Chapter.getDuration() +"\n" +
+                                        "El año del chapter es: " + Chapter.getYear()+ "\n"
+                                );
+                                break;
+
+                        }
+                        break;
+                    }while (opcion1!=5);
                     break;
                 case 4:
                     System.out.println("Libros que se encuentran en la lista: \n" + Magazine.getTitle());
