@@ -1,21 +1,17 @@
 package edu.misena.senaviewer.model;
 
-public class Book {
+public class Magazine {
 
     int id;
     String title;
     String editionDate;
     String editorial;
     String authors;
-    int isbn;
-    boolean readed;
-    int timeReaded;
 
-    public Book(String title, String editionDate, String editorial, int isbn) {
+    public Magazine(String title, String editionDate, String editorial) {
         this.title = title;
         this.editionDate = editionDate;
         this.editorial = editorial;
-        this.isbn = isbn;
     }
 
     public String getTitle() {
@@ -41,16 +37,5 @@ public class Book {
     public void setEditorial(String editorial) {
         this.editorial = editorial;
     }
-
-
-    public int getIsbnsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(int isbn) {
-        this.isbn = isbn;
-    }
-
-
 
 }
