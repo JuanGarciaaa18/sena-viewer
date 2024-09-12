@@ -42,7 +42,7 @@ public class Magazine extends publication {
 
     @Override
     public String toString() {
-        return "Magazine{" +
+        return  "Magazine{" +
                 super.toString() +
                 ", id=" + id +
                 ", title=" + title +

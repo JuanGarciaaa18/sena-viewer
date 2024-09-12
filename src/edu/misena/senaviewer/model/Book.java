@@ -56,7 +56,7 @@ public class Book extends publication {
 
     @Override
     public String toString() {
-        return "Book{" +
+        return   "Book{" +
                 super.toString() +
                 ", id=" + id +
                 ", title=" + title +
