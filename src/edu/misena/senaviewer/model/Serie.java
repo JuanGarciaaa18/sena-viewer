@@ -1,6 +1,6 @@
 package edu.misena.senaviewer.model;
 
-public class Serie {
+public class Serie extends film {
 
     int id;
     String title;
@@ -12,10 +12,8 @@ public class Serie {
     int timeviewed;
     int sessionQuantity;
 
-    public Serie(String title, String genre, int duration) {
-        this.title = title;
-        this.genre = genre;
-        this.duration = duration;
+    public Serie(String title, String genre,String creator, int duration) {
+        super(title,genre,creator, duration);
     }
 
     public String getTitle() {
@@ -42,5 +40,20 @@ public class Serie {
         this.duration = duration;
     }
 
+
+
+@Override
+public String toString() {
+    return "Serie{" +
+            super.toString() +
+            ", id=" + id +
+            ", title=" + title +
+            ", genre=" + genre +
+            ", creator=" + creator +
+            ", duration=" + duration +
+            ", year=" + year +
+            ", viewed=" + viewed +
+            '}';
+}
 }
 

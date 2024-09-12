@@ -1,6 +1,6 @@
 package edu.misena.senaviewer.model;
 
-public class Magazine {
+public class Magazine extends publication {
 
     int id;
     String title;
@@ -9,6 +9,7 @@ public class Magazine {
     String authors;
 
     public Magazine(String title, String editionDate, String editorial) {
+        super(title,editionDate,editorial);
         this.title = title;
         this.editionDate = editionDate;
         this.editorial = editorial;
@@ -38,4 +39,18 @@ public class Magazine {
         this.editorial = editorial;
     }
 
+
+    @Override
+    public String toString() {
+        return "Serie{" +
+                super.toString() +
+                ", id=" + id +
+                ", title=" + title +
+                ", Editiondate=" + editiondate +
+                ", Editorial=" + editorial +
+                ", Authors=" + authors +
+                '}';
+
+
+    }
 }

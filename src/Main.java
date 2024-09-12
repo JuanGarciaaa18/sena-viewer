@@ -17,11 +17,11 @@ public class Main {
 
 
 
-        Book Book = new Book("s","s","d",2);
-        Movie Movie= new Movie("s","s","s",12,2000);
-        Serie Serie = new Serie("f","g",12);
-        Chapter Chapter = new Chapter("s",12,2003);
-        Magazine Magazine = new Magazine("s","s","as");
+        Book Book = new Book("sa","sa","sa",2);
+        Movie Movie= new Movie("fas","fas","fa",12);
+        Serie Serie = new Serie("ja","ja","sa",2);
+        Chapter Chapter = new Chapter("ra",12,2003);
+        Magazine Magazine = new Magazine("ta","ta","ta");
         int opcion;
         int opcion1;
         int opcion2;

@@ -1,6 +1,6 @@
 package edu.misena.senaviewer.model;
 
-public class Movie extends film{
+public class film {
 
     int id;
     String title;
@@ -9,12 +9,14 @@ public class Movie extends film{
     int duration;
     int year;
     boolean viewed;
-    int timeviewed;
 
-    public Movie(String title, String genre, String creator, int duration) {
-     super(title, genre, creator, duration);
-     this.year= year;
+    public film(String title, String genre, String creator,int duration) {
+        this.title = title;
+        this.genre = genre;
+        this.duration = duration;
+        this.creator=creator;
     }
+
 
     public String getTitle() {
         return title;
@@ -32,6 +34,14 @@ public class Movie extends film{
         this.genre = genre;
     }
 
+    public int getDuration() {
+        return duration;
+    }
+
+    public void getDuration(int duration) {
+        this.duration = duration;
+    }
+
     public String getCreator() {
         return creator;
     }
@@ -40,27 +50,12 @@ public class Movie extends film{
         this.creator = creator;
     }
 
+    private static void librocompleto() {
 
-    public int getDuration() {
-        return duration;
     }
-
-    public void setDuration(int duration) {
-        this.duration = duration;
-    }
-
-
-    public int getYear() {
-        return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
-}
-
     @Override
     public String toString() {
-        return "Movie{" +
+        return "film{" +
                 super.toString() +
                 ", id=" + id +
                 ", title=" + title +
@@ -72,3 +67,6 @@ public class Movie extends film{
                 '}';
     }
 }
+
+
+
